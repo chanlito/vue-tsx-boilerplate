@@ -5,6 +5,7 @@ import { VCard, VCardText, VCardTitle } from 'vuetify-tsx';
 import styles from './GreetingCard.module.styl';
 
 export default componentFactory.create({
+  name: 'GreetingCard',
   props: {
     message: PropTyps(String).required,
   },
