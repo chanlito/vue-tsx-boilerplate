@@ -1,0 +1,69 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "register-service-worker": "^1.5.2",
+    "vee-validate": "^2.1.0-beta.8",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vue-strict-prop": "^0.3.0",
+    "vue-tsx-support": "^2.1.1",
+    "vuetify": "^1.2.3",
+    "vuetify-tsx": "^0.11.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-plugin-pwa": "^3.0.3",
+    "@vue/cli-plugin-typescript": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "@vue/eslint-config-prettier": "^3.0.3",
+    "@vue/eslint-config-typescript": "^3.0.3",
+    "style-resources-loader": "^1.2.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "@vue/prettier",
+      "@vue/typescript"
+    ],
+    "rules": {
+      "vue/require-default-prop": "off"
+    },
+    "parserOptions": {
+      "parser": "typescript-eslint-parser"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
