@@ -1,17 +1,10 @@
-import { AppLayout, DefaultLayout } from '@/layouts';
-import Vue from 'vue';
+import { component } from 'vue-tsx-support';
 
-export default Vue.extend({
+const App = component({
   name: 'App',
   render() {
-    return this.$route.meta.layout === 'app' ? (
-      <AppLayout>
-        <router-view />
-      </AppLayout>
-    ) : (
-      <DefaultLayout>
-        <router-view />
-      </DefaultLayout>
-    );
+    return <router-view />;
   },
 });
+
+export default App;

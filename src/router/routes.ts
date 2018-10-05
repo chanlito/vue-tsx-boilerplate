@@ -1,5 +1,7 @@
 import { RouteConfig } from 'vue-router';
 
+import { SecretGuard } from './guards';
+
 export const routes: RouteConfig[] = [
   {
     path: '/',
@@ -12,6 +14,13 @@ export const routes: RouteConfig[] = [
     name: 'about',
     meta: { layout: 'default' },
     component: loadView('About'),
+  },
+  {
+    path: '/secret',
+    name: 'secret',
+    meta: { layout: 'app' },
+    component: loadView('Secret'),
+    beforeEnter: SecretGuard,
   },
 ];
 

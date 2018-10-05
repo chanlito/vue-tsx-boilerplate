@@ -1,7 +1,7 @@
-import { componentFactory } from 'vue-tsx-support';
+import { component } from 'vue-tsx-support';
 import { VApp, VContent, VToolbar, VToolbarTitle } from 'vuetify-tsx';
 
-export default componentFactory.create({
+const AppLayout = component({
   name: 'AppLayout',
   render() {
     return (
@@ -14,3 +14,5 @@ export default componentFactory.create({
     );
   },
 });
+
+export default AppLayout;

@@ -13,21 +13,23 @@
     "vue-router": "^3.0.1",
     "vue-strict-prop": "^0.3.0",
     "vue-tsx-support": "^2.1.1",
-    "vuetify": "^1.2.3",
-    "vuetify-tsx": "^0.11.0"
+    "vuetify": "^1.2.6",
+    "vuetify-tsx": "^0.16.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.3",
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-plugin-pwa": "^3.0.3",
-    "@vue/cli-plugin-typescript": "^3.0.3",
-    "@vue/cli-service": "^3.0.3",
-    "@vue/eslint-config-prettier": "^3.0.3",
-    "@vue/eslint-config-typescript": "^3.0.3",
+    "@types/node": "^10.11.4",
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-plugin-pwa": "^3.0.4",
+    "@vue/cli-plugin-typescript": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/eslint-config-prettier": "^3.0.4",
+    "@vue/eslint-config-typescript": "^3.0.4",
     "style-resources-loader": "^1.2.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "typescript": "^3.0.0",
+    "typescript": "^3.0.3",
+    "vue-jsx-hot-loader": "^1.4.0",
     "vue-template-compiler": "^2.5.17"
   },
   "babel": {

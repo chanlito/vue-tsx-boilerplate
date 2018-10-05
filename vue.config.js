@@ -12,10 +12,10 @@ module.exports = {
     msTileColor: appColor,
   },
   chainWebpack: config => {
-    addStyleResource(config.module.rule('stylus').oneOf('vue'));
-    addStyleResource(config.module.rule('stylus').oneOf('normal'));
-    addStyleResource(config.module.rule('stylus').oneOf('vue-modules'));
-    addStyleResource(config.module.rule('stylus').oneOf('normal-modules'));
+    ['normal-modules', 'normal', 'vue-modules', 'vue'].forEach(type =>
+      addStyleResource(config.module.rule('stylus').oneOf(type)),
+    );
+    addVueJSXHotLoader(config);
   },
 };
 
@@ -29,4 +29,13 @@ function addStyleResource(rule) {
         resolve(__dirname, './src/assets/styles/mixins.styl'),
       ],
     });
+}
+
+function addVueJSXHotLoader(config) {
+  config.module
+    .rule(/\.(j|t)sx$/)
+    .test(/\.(j|t)sx$/)
+    .use('vue-jsx-hot-loader')
+    .before('babel-loader')
+    .loader('vue-jsx-hot-loader');
 }
